@@ -8,7 +8,6 @@ static def getDate() {
     return formattedDate
 }
 
-
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
     buildToolsVersion rootProject.ext.buildToolsVersion
@@ -26,6 +25,7 @@ android {
         minSdkVersion rootProject.ext.minSdkVersion
         versionCode 2
         versionName '1.0.1'
+
         applicationId "com.st.assetTracking"
         targetSdkVersion rootProject.ext.targetSdkVersion
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
@@ -64,7 +64,19 @@ ext {
 dependencies {
 
     implementation project(path: ':Sigfox')
+    implementation project(path: ':BlueTileSupport')
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
+    implementation "androidx.appcompat:appcompat:$rootProject.androidx_appCompatVersion"
+    implementation "com.google.android.material:material:$rootProject.androidx_materialVersion"
+    implementation "androidx.recyclerview:recyclerview:$rootProject.androidx_recycleViewVersion"
+    implementation "androidx.cardview:cardview:$rootProject.androidx_cardViewVersion"
+    implementation "androidx.constraintlayout:constraintlayout:$rootProject.androidx_constraintLayoutVersion"
+
+
+    androidTestImplementation "androidx.test:runner:$rootProject.androidx_runnerVersion"
+    androidTestImplementation "androidx.test:rules:$rootProject.androidx_rulesVersion"
+    androidTestImplementation "androidx.test.espresso:espresso-core:$rootProject.androidx_espressoVersion"
 
     //memory leak detector
     debugImplementation group: 'com.squareup.leakcanary', name: 'leakcanary-android', version: "$leakcanaryVersion"

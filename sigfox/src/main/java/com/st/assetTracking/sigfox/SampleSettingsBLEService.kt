@@ -44,6 +44,7 @@ import androidx.localbroadcastmanager.content.LocalBroadcastManager
 import android.util.Log
 import com.st.BlueSTSDK.Manager
 import com.st.BlueSTSDK.Node
+import com.st.assetTracking.sigfox.model.SamplingSettings
 
 private const val ACTION_WRITE_CONFIGURATION = "SampleSettingsBLEService.ACTION_WRITE_CONFIGURATION"
 private const val ACTION_READ_CONFIGURATION = "SampleSettingsBLEService.ACTION_READ_CONFIGURATION"

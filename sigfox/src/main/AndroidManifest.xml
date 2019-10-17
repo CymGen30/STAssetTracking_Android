@@ -2,7 +2,8 @@
     package="com.st.assetTracking.sigfox" >
 
     <application>
-        <activity android:name=".SigfoxTrackerConfig"/>
+        <activity android:name=".SigfoxTrackerConfig"
+            android:label="@string/sigfox_config_title"/>
         <service
             android:name="com.st.assetTracking.sigfox.SampleSettingsBLEService"
             android:exported="false"/>

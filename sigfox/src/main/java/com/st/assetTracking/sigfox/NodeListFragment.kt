@@ -1,5 +1,9 @@
 /*
+<<<<<<< HEAD
  *  Copyright (c) 2019  STMicroelectronics – All rights reserved
+=======
+ *  Copyright (c) 2018  STMicroelectronics – All rights reserved
+>>>>>>> addBlueTileSupport
  *  The STMicroelectronics corporate logo is a trademark of STMicroelectronics
  *
  *  Redistribution and use in source and binary forms, with or without modification,
@@ -48,7 +52,6 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import android.widget.Toast
-import com.google.android.material.snackbar.Snackbar
 import com.st.BlueSTSDK.Manager
 import com.st.BlueSTSDK.Node
 import com.st.BlueSTSDK.Utils.BlePermissionHelper
@@ -128,8 +131,10 @@ internal class NodeListFragment : AppCompatDialogFragment(), NodeRecyclerViewAda
         })
         nodeList.adapter = nodeListAdapter
         bleManager.addListener(nodeListAdapter)
+
         if (blePermission.checkAdapterAndPermission()) {
             mCallback.onBlePermissionAcquired()
+
         }
 
     }
@@ -167,7 +172,6 @@ internal class NodeListFragment : AppCompatDialogFragment(), NodeRecyclerViewAda
         if (blePermission.onActivityResult(requestCode, resultCode, data) == null) {
             super.onActivityResult(requestCode, resultCode, data)
         }
-
     }
 
 

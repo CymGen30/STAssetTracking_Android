@@ -42,6 +42,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+
 import com.st.assetTracking.sigfox.R
 import com.st.assetTracking.sigfox.model.Orientation
 import com.st.assetTracking.sigfox.viewModel.resourceImage

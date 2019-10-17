@@ -14,6 +14,7 @@ android {
         vectorDrawables.useSupportLibrary = true
         multiDexEnabled true
     }
+
     buildTypes {
         release {
             minifyEnabled true
@@ -57,4 +58,5 @@ dependencies {
     androidTestImplementation group:'androidx.test', name:'runner', version:"$rootProject.androidx_runnerVersion"
     androidTestImplementation group:'androidx.test', name:'rules', version:"$rootProject.androidx_rulesVersion"
     androidTestImplementation group:'androidx.test.espresso', name: 'espresso-core', version:"$rootProject.androidx_espressoVersion"
+
 }

@@ -39,6 +39,7 @@ package com.st.assetTracking.sigfox.viewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+
 import com.st.assetTracking.sigfox.R
 import com.st.assetTracking.sigfox.model.Orientation
 import com.st.assetTracking.sigfox.model.SamplingSettings

@@ -1,8 +1,13 @@
 package com.st.assetTracking.sigfox;
 
 import android.content.Context;
+<<<<<<< HEAD
 import android.support.test.InstrumentationRegistry;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
+=======
+import androidx.test.InstrumentationRegistry;
+import androidx.test.runner.AndroidJUnit4;
+>>>>>>> addBlueTileSupport
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

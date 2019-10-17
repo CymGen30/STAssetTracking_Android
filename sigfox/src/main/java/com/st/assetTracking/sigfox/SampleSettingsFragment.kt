@@ -69,6 +69,7 @@ internal class SampleSettingsFragment : androidx.fragment.app.Fragment(){
     private lateinit var mSamplingInterval: com.google.android.material.textfield.TextInputLayout
     private lateinit var mCloudSyncIntervalSelector: Spinner
     private lateinit var mThresholdList: androidx.recyclerview.widget.RecyclerView
+
     private lateinit var mThresholdListAdapter:SensorThresholdAdapter
     private lateinit var mLoadingBar:ProgressBar
 

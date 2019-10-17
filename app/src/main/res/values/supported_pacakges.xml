@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="package_sifgox_name">FP-ATR-SIGFOX1</string>
+    <string name="package_sifgox_desc">CHANGE ME</string>
+
+    <string name="package_smarTag_desc">CHANGE ME</string>
+    <string name="package_smarTag_name">FP-SNS-SMARTAG1</string>
+
+    <string name="package_bluetile_desc">CHANGE ME</string>
+    <string name="package_bluetile_name">BluTile FP Name</string>
+
+
+</resources>
